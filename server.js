@@ -13,15 +13,15 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/Aricle-one',function (req, res) {
+app.get('/Article-one',function (req, res) {
     res.send('Article one requested and it will be in the server soon.');
 });
 
-app.get('/Aricle-two',function (req, res) {
+app.get('/Article-two',function (req, res) {
     res.send('Article two requested and it will be in the server soon.');
 });
 
-app.get('/Aricle-three',function (req, res) {
+app.get('/Article-three',function (req, res) {
     res.send('Article three requested and it will be in the server soon.');
 });
 
