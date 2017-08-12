@@ -25,6 +25,35 @@ var content = {
     `
 };
 
+var htmlTemplate = {
+    <html>
+        <head>
+            <title>
+            ${title}
+            <ttle>
+            <meta name="viewport" content="width=device-width, initial-scale="/>
+            <link href="/ui/style.css" rel="stylesheet"/>
+        </head>
+        <body>
+            <div class="container">
+                <div>
+                    <a href="/">Home</a>
+                </div>
+                </hr>
+                <h3>
+                    ${heading}
+                </h3>
+                <div>
+                    ${date}
+                </div>
+                <div>
+                    ${content}
+                </div>
+            </div>
+        </body>
+    </html
+};
+
 
 
 app.get('/', function (req, res) {
