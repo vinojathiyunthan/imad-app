@@ -24,8 +24,13 @@ var content = {
     
     `
 };
+function createTemplate(data){
+    var title= data.title;
+    var date= data.date;
+    var heading= data.heading;
+    var content= data.content;
 
-var htmlTemplate = {
+var htmlTemplate =`
     <html>
         <head>
             <title>
@@ -52,7 +57,10 @@ var htmlTemplate = {
             </div>
         </body>
     </html
-};
+`;
+
+    return htmlTemplate;
+}
 
 
 
