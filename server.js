@@ -73,7 +73,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/Article-one',function (req, res) {
-    res.send('Article one requested and it will be in the server soon.');
+    res.send(createTemplate(articleone));
 });
 
 app.get('/Article-two',function (req, res) {
